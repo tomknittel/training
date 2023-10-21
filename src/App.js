@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Content from './nachricht';
+import MyButton from './Button';
+import DynamicTableCreator from './Button_to_table';
+import Create_flat_list from './List_data';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className='App'>
+    <Content/>
+    <MyButton/>
+    <DynamicTableCreator/>
+    <Create_flat_list/>
     </div>
-  );
+  )
 }
 
 export default App;
